@@ -10,10 +10,10 @@
   --text-footer: #e7e9fc;
   --accent-color: #4d5ae5;
   /* background */
-  --background: #ffffff;
-  --oder-section-background: #2e2f42;
+  --primary-background: #ffffff;
+  --secondary-background: #2e2f42;
+  --features-list-icon-background: #f4f4fd;
   --team-section-background: #f4f4fd;
-  --footer-section-background: #2e2f42;
   /* icons-and-logo */
   --logo-color-web: #4d5ae5;
   --logo-color-studio-header: #2e2f42;
@@ -87,7 +87,7 @@ body {
   font-family: var(--primary-fons);
   font-size: 16px;
   color: var(--primary-text-color);
-  background: var(--background);
+  background: var(--primary-background);
 }
 
 /* Components */
@@ -197,7 +197,7 @@ body {
 /* Order Service section */
 
 .hero {
-  background: var(--oder-section-background);
+  background: var(--secondary-background);
   padding: 188px 0;
   max-width: 1440px;
   margin-left: auto;
@@ -272,7 +272,7 @@ body {
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
-  background: #f4f4fd;
+  background: var(--features-list-icon-background);
   border-radius: 4px;
 }
 
@@ -305,7 +305,7 @@ body {
 }
 
 .txt-conteiner {
-  background: var(--background);
+  background: var(--primary-background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -329,7 +329,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #4d5ae5;
+  background: var(--accent-color);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -377,7 +377,7 @@ body {
 }
 /* Footer */
 .footer {
-  background: var(--footer-section-background);
+  background: var(--secondary-background);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -500,7 +500,7 @@ body {
 }
 
 .txt-portfolio {
-  background: var(--background);
+  background: var(--primary-background);
   border: 1px solid var(--border-color);
   border-top: none;
   padding: 32px 16px 32px 16px;
