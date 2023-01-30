@@ -52,6 +52,7 @@ ul {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 button {
@@ -171,6 +172,15 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
+}
+.menu-link:hover::after {
+  content: '';
+  display: flex;
+  width: 48px;
+  height: 4px;
+  margin-top: 24px;
+  background: #404bbf;
+  border-radius: 2px;
 }
 
 .contacts-list {
