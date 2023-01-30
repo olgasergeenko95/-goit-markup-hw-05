@@ -123,6 +123,7 @@ body {
   border-bottom: 1px solid var(--border-color);
   padding-top: 24px;
   padding-bottom: 24px;
+  max-height: 76px;
 }
 
 .page-header {
@@ -176,7 +177,7 @@ body {
 .menu-link:hover::after {
   content: '';
   display: flex;
-  width: 48px;
+  flex-grow: 1;
   height: 4px;
   margin-top: 24px;
   background: #404bbf;
@@ -198,7 +199,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
+.menu-link,
+.contact-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
