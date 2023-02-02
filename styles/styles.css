@@ -188,11 +188,11 @@ body {
 .menu-link.current::after {
   content: '';
   position: absolute;
-  display: block;
   bottom: -6px;
+
+  display: block;
   width: 100%;
   height: 4px;
-
   border-radius: 2px;
   background: #404bbf;
 }
