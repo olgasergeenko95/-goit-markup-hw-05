@@ -576,11 +576,11 @@ body {
   z-index: 2;
   background: rgba(46, 47, 66, 0.4);
 }
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-} */
+}
 .modal-icon-btn {
   display: flex;
   align-items: center;
@@ -588,10 +588,10 @@ body {
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 8px;
   border-radius: 50%;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  color: transparent;
 }
 
 .modal {
