@@ -15,6 +15,7 @@
   --secondary-background: #2e2f42;
   --features-list-icon-background: #f4f4fd;
   --team-section-background: #f4f4fd;
+  --background-btn: #404bbf;
   /* icons-and-logo */
   --logo-color-web: #4d5ae5;
   --logo-color-studio-header: #2e2f42;
@@ -24,6 +25,7 @@
   --customers-color-active: #404bbf;
   --social-media-icons-color: #f4f4fd;
   --footer-social-link-active: #31d0aa;
+  --icon-fill: #ffffff;
   /* other */
   --colum-gap: 24px;
   --row-gap: 48px;
@@ -361,9 +363,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background: var(--accent-color);
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -389,6 +389,9 @@ body {
 .customers-item {
   width: 168px;
 }
+.customers-icon {
+  fill: currentColor;
+}
 .customers-link {
   display: flex;
   align-items: center;
@@ -399,14 +402,10 @@ body {
   color: var(--customers-color);
   border: 1px solid var(--customers-color);
   border-radius: 4px;
-  transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-icon {
-  fill: currentColor;
-}
 .customers-link:hover,
 .customers-link:focus {
   color: var(--customers-color-active);
@@ -463,9 +462,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list-icon {
   fill: var(--social-media-icons-color);
@@ -496,9 +493,9 @@ body {
   background: #f4f4fd;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  transition-property: background, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-btn-nav:hover,
@@ -507,7 +504,6 @@ body {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /* portaolio */
@@ -534,9 +530,7 @@ body {
 }
 .portfolio-link {
   display: block;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -568,6 +562,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--light-txt-color);
 }
+
 .txt-portfolio {
   background: var(--primary-background);
   border: 1px solid var(--border-color);
@@ -618,11 +613,10 @@ body {
   border-radius: 50%;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition-property: background, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover {
-  background: #404bbf;
-  fill: #ffffff;
+  background: var(--background-btn);
+  fill: var(--icon-fill);
 }
