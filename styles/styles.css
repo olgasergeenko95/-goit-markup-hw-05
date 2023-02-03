@@ -180,9 +180,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -217,7 +215,7 @@ body {
   color: var(--secondary-text-color);
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -271,9 +269,8 @@ body {
   letter-spacing: 0.04em;
   color: var(--modal-btn-text-color);
   background: var(--accent-color);
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -546,64 +543,28 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* .portfolio-thumb {
+.portfolio-thumb {
   position: relative;
-}
-.portfolio-thumb::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #4d5ae5;
-  opacity: 0;
-}
-.portfolio-thumb:hover::before {
-  opacity: 1;
-}
-.portfolio-action {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-
-.txt-hover-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  z-index: ;
-  opacity: 1;
-} */
-
-.portfolio-link {
-  position: relative;
-  display: block;
   overflow: hidden;
 }
-.txt-hover-img {
+.portfolio-link:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+.portfolio-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translate(0%, 100%);
   padding: 40px 32px 0 32px;
-  background: #4d5ae5;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  transition: animation transitition;
+  background: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-link:hover .txt-hover-img,
-.portfolio-link:focus .txt-hover-img {
-  transform: translate(0%, 0%);
-}
+
 .txt-portfolio {
   background: var(--primary-background);
   border: 1px solid var(--border-color);
