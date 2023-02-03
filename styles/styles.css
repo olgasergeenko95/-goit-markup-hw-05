@@ -621,6 +621,7 @@ body {
   z-index: 2;
   background: rgba(46, 47, 66, 0.4);
 }
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -637,6 +638,13 @@ body {
   border-radius: 50%;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: background, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon-btn:hover {
+  background: #404bbf;
+  fill: #ffffff;
 }
 
 .modal {
